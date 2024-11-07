@@ -1,0 +1,10 @@
+name: Output
+on: 
+    issue_comment:
+        types: [created, deleted, edited]
+jobs:
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output Issues Context
+              run: echo "Testing"
